@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+    <link rel="shortcut icon" href="img/index_icon.jpg">
+    <title>SoundBlocks</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/forma.css">
+    <link rel="stylesheet" href="css/existencia.css" media="print">
+    <link rel="stylesheet" href="js/highlight/styles/github.min.css">
+
+    <meta property="og:url" content="http://soundblocks.surwww.com/" />
+    <meta property="og:title" content="Bloques Sonoros / SoundBlocks" />
+    <meta property="og:description"
+      content="Exploración artística y tecnológica con dispositivos sonoros, escultóricos y modulares." />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="es_LA" />
+    <meta name="keywords" content="interfaces de usuario tangibles, tecnologías digitales interactivas, artes electrónicas, untref" />
+    <meta name="description"
+      content="exploración artística y tecnológica con dispositivos sonoros, escultóricos y modulares." />
+</head>
+
+<body id="hardware">
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <img src="img/logo_LAEIA.png" alt="UNTREF" class="d-block d-md-none mobile-logo" />
+          <h1>Bloques Sonoros / SoundBlocks</h1>
+          <p>Exploración artística y tecnológica con dispositivos sonoros, escultóricos y modulares.</p>
+        </div>
+        <div class="col-4 text-right d-none d-md-block">
+          <div>
+            <img src="img/logo_LAEIA.png" alt="UNTREF" width=50%/>
+          </div>
+        </div>
+        <div class="d-sm-none d-block navbar-light toggler">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>            </button>
+        </div>
+        <div class="col-12 text-right">
+          <div class="navbar navbar-expand-sm">
+            <div class="collapse navbar-collapse" id="menu">
+              <nav>
+                <ul>
+                  <li><a href="index.html">Inicio</a></li> 
+                  <li><a href="interaccion.html">Interacción</a></li>
+                  <li class="activo"><a href="hardware.html">Hardware</a></li>
+                  <li><a href="software.html">Software</a></li>
+                  <li><a href="difusion.html">Difusión</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article class="container">
+
+      <h2 class="h1">Hardware</h2>
+      <div class="row">
+        <div class="col-md-7">
+          <h2>Sensores</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <p>Cada uno de los módulo está equipado con una serie de sensores capacitivos diseñados para detectar la presencia de las manos de participantes a través de pequeñas superficies.</p>
+          <p>Además, incorpora un sensor micro electromecánico que incluye un acelerómetro y un giróscopo de tres ejes para medir movimientos y rotaciones en el espacio.</p>
+          <p>También integra un magnetómetro de tres ejes para detectar la orientación con respecto al campo magnético terrestre.</p>
+        </div>
+        <aside class="col-md-4 mx-auto">
+          <img src="img/hardware/sensores.jpg" alt=""/>
+          <figcaption>Acelerómetro y magnetómetro.</figcaption>
+        </aside>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-md-7">
+          <h2>Procesamiento y memoria</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <p>La unidad de procesamiento y memoria consta de un microcontrolador ESP32, que incorpora tecnología Wi-Fi. Esta conexión inalámbrica Wi-Fi permite enviar y recibir datos para ajustar los parámetros sonoros en tiempo real. Asimismo, permite utilizar información proveniente de otros dispositivos o redes externas, como datos disponibles en Internet, para enriquecer la experiencia.</p>
+        </div>
+        <aside class="col-md-4 mx-auto">
+          <img src="img/hardware/microcontrolador.jpg" alt=""/>
+          <figcaption>Microcontrolador ESP32.</figcaption>
+        </aside>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Actuadores</h2>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-6">
+          <p>Los módulos ofrecen dos formas de producir sonido, las cuales pueden controlarse simultáneamente. La primera opción es mediante un sintetizador de audio con un conversor digital analógico de 8 bits. La otra consiste en la reproducción de pistas de audio grabadas en una tarjeta microSD, con una calidad de 48KHz a 24 bits y una capacidad de almacenamiento de hasta 32 GB.</p><br>
+        </div>
+        <aside class="col-md-4 mx-auto">
+          <img src="img/hardware/actuadores.jpg" alt=""/>
+          <figcaption>DFPlayer, tarjera microSD y parlante.</figcaption>
+        </aside>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col-md-7">
+          <h2 class="h1">Prototipos de módulos sonoros</h2>
+          <p>Aquí se presentan dos prototipos de módulos sonoros e interactivos desarrollados como parte de la investigación. Estos ejemplifican diferentes disposiciones físicas de los elementos de cada módulo.</p>
+        </div>
+     </div>
+
+      <div class="row">
+        <div class="col-md-6">
+        <p>&nbsp;</p>	
+          <img src="img/hardware/pcb.JPG" alt="" width="100%" height="360"/>
+          <figcaption>Módulo montado en una placa de prueba.</figcaption>
+        </div>
+        <aside class="col-md-6">
+          <h2></h2>
+          <iframe src="https://player.vimeo.com/video/935614694?h=96b60aae64&title=0&byline=0&portrait=0" width="100%" height="360" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </aside>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+        <p>&nbsp;</p>	
+          <img src="img/hardware/corporea.JPG" alt="" />
+          <figcaption>Módulo montado como interfaz corpórea.</figcaption>
+        </div>
+      </div>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>2023-2025 - Bloques Sonoros se desarrolla en el <b><a href="http://www.untref.edu.ar/instituto/laboratorio-de-arte-electronico-e-inteligencia-artificial" target="_blank">Laboratorio de Arte Electrónico e Inteligencia Artificial</a></b> de la <b><a href="http://www.untref.edu.ar/" target="_blank">Universidad Nacional de Tres de Febrero</a></b>.</p>
+      <p>Contacto: <a href="mailto:lbender@untref.edu.ar">lbender@untref.edu.ar</a> / <a href="mailto:gito@untref.edu.ar">gito@untref.edu.ar</a></p>  
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/wavesurfer.js@6.6"></script>
+    <script src="js/wsmain.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
