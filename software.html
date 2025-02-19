@@ -24,52 +24,76 @@
 </head>
 
 <body id="software">
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-8">
-          <img src="img/logo_LAEIA.png" alt="UNTREF" class="d-block d-md-none mobile-logo" />
-          <h1>Bloques Sonoros / SoundBlocks</h1>
-          <p>Exploración artística y tecnológica con dispositivos sonoros, escultóricos y modulares.</p>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8">
+        <img src="img/logo_LAEIA.png" alt="UNTREF" class="d-block d-md-none mobile-logo" />
+        <h1>Bloques Sonoros / SoundBlocks</h1>
+        <p>Exploración artística y tecnológica con dispositivos sonoros, escultóricos y modulares.</p>
+      </div>
+      <div class="col-4 text-right d-none d-md-block">
+        <div>
+          <img src="img/logo_LAEIA.png" alt="UNTREF" width=50%/>
         </div>
-        <div class="col-4 text-right d-none d-md-block">
-          <div>
-            <img src="img/logo_LAEIA.png" alt="UNTREF" width=50%/>
-          </div>
-        </div>
-        <div class="d-sm-none d-block navbar-light toggler">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>            </button>
-        </div>
-        <div class="col-12 text-right">
-          <div class="navbar navbar-expand-sm">
-            <div class="collapse navbar-collapse" id="menu">
-              <nav>
-                <ul>
-                  <li><a href="index.html">Inicio</a></li> 
-                  <li><a href="interaccion.html">Interacción</a></li>
-                  <li><a href="hardware.html">Hardware</a></li>
-                  <li class="activo"><a href="software.html">Software</a></li>
-                  <li><a href="difusion.html">Difusión</a></li>
-                </ul>
-              </nav>
-            </div>
+      </div>
+      <div class="d-sm-none d-block navbar-light toggler">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>            </button>
+      </div>
+      <div class="col-12 text-right">
+        <div class="navbar navbar-expand-sm">
+          <div class="collapse navbar-collapse" id="menu">
+            <nav>
+              <ul>
+                <li><a href="index.html">Inicio</a></li> 
+                <li><a href="interaccion.html">Interacción</a></li>
+                <li><a href="hardware.html">Hardware</a></li>
+                <li class="activo"><a href="software.html">Software</a></li>
+                <li><a href="difusion.html">Difusión</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
-    <main>
-      <article class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <h2 class="h1">Software desarrollado en el proyecto</h2>
-            <p>Actualmente, se está desarrollando un protocolo de comunicación e interfaz gráfica de usuario diseñados para simplificar la configuración de los dispositivos sonoros y definir los modos de interacción. Esta interfaz permitirá la configuración y ajuste de los módulos sonoros de manera sencilla, eliminando la necesidad de conocimientos técnicos avanzados o específicos sobre protocolos y lenguajes de programación. Con una interfaz intuitiva, se busca facilitar una interacción más fluida con la tecnología, permitiendo a los usuarios enfocarse en la creatividad con menores obstáculos técnicos.</p>
-            <br>
-            <b>GIT:</b><a href="https://github.com/soundblocks" target="_blank">https://github.com/soundblocks</a></p>
+<main>
+  <article class="container">
+
+    <h2 class="h1">Software desarrollado en el proyecto</h2>
+    <div class="row">
+      <div class="col-md-7">
+        <h2>SoundBlocks Configurator</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <p><b>SoundBlocks Configurator</b> es una interfaz gráfica de configuración para los módulos sonoros interactivos. Permite determinar las acciones sonoras realizadas por cada módulo y la designación de los datos sensados y transmitidos entre módulos.</p>
+        <p>Es compatible con los entornos Windows, Mac OS X y Linux.</p>
+        <p><b>Autores:</b> Laurence Bender, Sabrina García, Germán Ito</p>
+        <p><b>GIT: </b><a href="https://github.com/soundblocks/configurator" target="_blank">https://github.com/soundblocks/configurator</a></p>
+        <p><b>Uso b&aacute;sico del m&oacute;dulo:</b></p>
+        <pre><code>
+  122->ax:102,106-108 #bloque 122 manda ax a los bloques 102, 106, 107, 108
+  107->t1,t3:102,105-107
+  108->az,t3,t7,azimuth:102-106
+
+  108<-ax:122@dfVolume[0,15] #bloque 108 recibe ax del bloque 122 y lo usa para manejar volumen
+  102<-t3:107@dfPlay[1,5]
+  103<-az:108@dfVolume[0,15]
+  103<-t7:108@dfPlay[1,5]
+        </code></pre>
           </div>
+          <aside class="col-md-4 mx-auto">
+            <img src="img/software/configurator.png" alt=""/>
+            <figcaption>SoundBlocks Configurator GUI.</figcaption>
+          </aside>
         </div>
+        </article>
     </main>
     
     <footer>
